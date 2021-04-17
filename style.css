@@ -141,8 +141,17 @@ h1{
 }
 
 .sheldon a{
-    text-decoration: none;
+    color: var(--second-dark);
+}
+
+.video{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.video h3{
     color: var(--main-dark);
+    margin-bottom: 0.5rem;
 }
 
 footer{
