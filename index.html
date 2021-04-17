@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lizard Spock Expansion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+    </header>
+    <div class="container">
+        <section class = "score-board">
+            <div id = "for-user" class = "badge">You</div>
+            <div id = "for-computer" class = "badge">Computer</div>
+            <span id = "user-score"> 0 </span> <span id="colon"> : </span><span id = "computer-score"> 0 </span>
+        </section>
+    
+        <form>
+            <input class="reset badge" type = "button" value="Reset" onClick="window.location.reload()" />
+        </form>
+    
+        <div class = "result"> 
+            <p>Hey let's play! </p>
+        </div>
+    
+        <div class = "choices">
+            <!-- <div class="line1"> -->
+                <div class = "choice" id = "rock"> 
+                    <img src="./images/rock.png" height="150px" width="150px" alt="rock">
+                </div>
+                <div class = "choice" id = "paper"> 
+                    <img src="./images/paper.png" height="150px" width="150px" alt="paper">
+                </div>
+                <div class = "choice" id = "scissors"> 
+                    <img src="./images/scissors.png" height="150px" width="150px" alt="scissors">
+                </div>
+            <!--
+            </div>
+            
+            <div class="line2"> -->
+                <div class = "choice" id = "lizard"> 
+                    <img src="./images/lizard.png" height="150px" width="150px" alt="lizard">
+                </div>
+        
+                <div class = "choice" id = "spock"> 
+                    <img src="./images/spock.jpg" height="150px" width="150px" alt="spock">
+                </div>
+            <!-- </div> -->
+        </div>
+    
+        <p id = "message">Make your move!</p> <hr>
+        <h2 class="para-title">About The Game</h2>
+        <p class="sheldon"> 
+            Rock Paper Scissors Lizard Spock is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla. 
+        
+            Sam Kass explains he created the expanded game because it seemed like most games of Rock Paper Scissors with people you know would end in a tie.
+    
+            Rock Paper Scissors Lizard Spock was first mentioned in the Season 2 episode, The Lizard-Spock Expansion, the title of which references the game. It was last mentioned in The Rothman Disintegration.
+            
+            As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors." 
+            <a href="https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/" target="_blank"> More Details</a> 
+        </p>
+        <footer>
+            <p>
+                &copy Created by Riyo Khan
+            </p>
+        </footer>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

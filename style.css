@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-dark: #050d35;
+    --second-dark: #1a6d65;
+    --main-light: #F9F8FF;
+}
+
+body{
+    background-color:var(--main-light);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    min-width: 400px;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background:var(--main-dark);
+    padding: 2.2rem;
+    width: 100%;
+    z-index: 99;
+}
+
+h1{
+    color:var(--main-light);
+    text-align: center;
+}
+.container{
+    position: relative;
+    top: 9rem;
+}
+.score-board{
+    position: relative;
+    border: 0.25rem solid var(--main-dark);
+    width: 17rem;
+    border-radius: 2%;
+    margin: 2.5rem auto;
+    padding: 1.2rem 2.5rem;
+    color: var(--main-dark);
+    font-size: 3rem;
+    text-align: center; 
+}
+.badge{
+    background-color: var(--second-dark);
+    color: var(--main-light);
+    font-size: 1.3rem;
+    padding: 5px 10px;
+}
+.reset{
+    position: relative;
+    left: 47%;
+    top: -1.5rem;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#for-user{
+    position: absolute;
+    top: 40px;
+    left: -35px;
+}
+
+#for-computer{
+    position: absolute;
+    top: 40px;
+    right: -80px;
+}
+
+#user-score{
+    position: relative;
+    top: 50%;
+    left: 5%;
+}
+#computer-score{
+    position: relative;
+    top: 50%;
+    right: 5%;
+}
+#colon{
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.result{
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    color: var(--main-dark);
+}
+
+.choices{ 
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.choice{
+    display: inline-block;
+    margin: 0.3rem;
+    border-radius: 50%;
+    padding: 3px;
+    transform: scale(0.8);
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: var(--second-dark);
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+#message{
+    text-align: center;
+    color: var(--main-dark);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
+
+.para-title{
+    text-align: center;
+    color: var(--main-dark);
+    margin: 2rem;
+}
+
+.sheldon{
+    margin: 2rem 8rem 4rem;
+    width: auto;
+    color: var(--main-dark);
+}
+
+.sheldon a{
+    text-decoration: none;
+    color: var(--main-dark);
+}
+
+footer{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 1rem;
+    color: var(--main-light);
+    background-color: var(--main-dark);
+}
+
+@media(min-width:884px) and (max-width:925px){
+    .choices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(min-width:636px) and (max-width:883px){
+    .choices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:799px){
+    .score-board{
+        width: 15rem;
+        font-size: 2.5rem;
+    }
+    .badge{
+        font-size: 1rem;
+    }
+    #for-user{
+        left: -25px;
+    }
+    
+    #for-computer{
+        right: -60px;
+    }
+    .sheldon{
+        margin: 2rem 5rem 4rem;
+        width: auto;
+    }
+    .result{
+        font-size: 2.1rem;
+    }
+    #message{
+        font-size: 1.7rem;
+    }
+    img{
+        height: 120px;
+        width: 120px;
+    }
+    .reset{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:496px){
+    .choices{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
