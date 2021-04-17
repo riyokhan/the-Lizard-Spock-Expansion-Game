@@ -17,7 +17,6 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     min-width: 400px;
-    overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -37,6 +36,7 @@ h1{
 .container{
     position: relative;
     top: 9rem;
+    overflow-x: hidden;
 }
 .score-board{
     position: relative;
@@ -138,6 +138,7 @@ h1{
     margin: 2rem 8rem 4rem;
     width: auto;
     color: var(--main-dark);
+
 }
 
 .sheldon a{
